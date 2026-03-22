@@ -1,6 +1,6 @@
 // ===== CONFIG =====
 // Change this to your backend URL when deployed on Render
-const API_URL = 'https://kristu-events-backend.onrender.com';
+const API_URL = 'https://kristu-events-backend1.onrender.com';
 
 // ===== LOAD EVENTS =====
 async function loadEvents() {
