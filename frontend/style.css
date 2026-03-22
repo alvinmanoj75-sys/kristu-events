@@ -1,14 +1,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #f8f6f1;
-  --bg2: #ffffff;
-  --card: #ffffff;
-  --accent: #e84545;
-  --accent2: #2b2d42;
-  --text: #2b2d42;
+  --bg: #000000;
+  --bg2: #0a0a1a;
+  --card: #0d1b2a;
+  --accent: #003580;
+  --accent2: #1a3a6b;
+  --text: #ffffff;
   --muted: #8d99ae;
-  --border: #e0ddd6;
+  --border: #1a3a6b;
   --font: 'Space Grotesk', sans-serif;
   --font-display: 'Bebas Neue', sans-serif;
 }
