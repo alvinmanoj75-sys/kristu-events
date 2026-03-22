@@ -1,0 +1,4 @@
+# Replace these with your Supabase project keys
+SUPABASE_URL=https://lpuovtyktzttwwqubzmf.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxwdW92dHlrdHp0dHd3cXViem1mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5MzI0NzIsImV4cCI6MjA4OTUwODQ3Mn0.zmyOskSAjEdPolbLI6RSepICVkIq14URL5jjOLR79D0
+PORT=3000

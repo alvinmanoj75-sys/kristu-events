@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kristu Jayanti Event Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="bg-dots"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">KJ<span class="accent">Events</span></div>
+    <ul>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#submit">Submit</a></li>
+      <li><a href="admin.html" class="admin-btn">Admin</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="pre">🎓 Kristu Jayanti College, Bengaluru</p>
+      <h1>College <span class="accent">Event Board</span></h1>
+      <p class="sub">Stay updated with all upcoming events, fests, and activities at Kristu Jayanti!</p>
+      <a href="#submit" class="cta-btn">Submit an Event →</a>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="section">
+    <div class="section-header">
+      <h2>📅 Upcoming Events</h2>
+      <p>All approved events from Kristu Jayanti College</p>
+    </div>
+    <div class="events-grid" id="events-grid">
+      <div class="loading">Loading events...</div>
+    </div>
+  </section>
+
+  <!-- SUBMIT -->
+  <section id="submit" class="section">
+    <div class="section-header">
+      <h2>➕ Submit an Event</h2>
+      <p>Know about an upcoming event? Submit it here!</p>
+    </div>
+    <form class="submit-form card" id="eventForm">
+      <div class="form-group">
+        <label>Event Title</label>
+        <input type="text" id="title" placeholder="e.g. Tech Fest 2026" required/>
+      </div>
+      <div class="form-group">
+        <label>Event Date</label>
+        <input type="date" id="date" required/>
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea id="description" rows="4" placeholder="Tell us about the event..." required></textarea>
+      </div>
+      <button type="submit" class="cta-btn" id="submitBtn">Submit Event →</button>
+      <p class="form-status" id="form-status"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Kristu Jayanti College · BCA Cyber Security · Event Board</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

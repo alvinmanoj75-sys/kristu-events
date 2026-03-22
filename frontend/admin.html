@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel | KJ Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="bg-dots"></div>
+
+  <!-- LOGIN -->
+  <div id="login-screen" class="login-screen">
+    <div class="login-card card">
+      <h2>🔐 Admin Login</h2>
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" id="admin-user" placeholder="admin"/>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="admin-pass" placeholder="••••••••"/>
+      </div>
+      <button class="cta-btn" onclick="adminLogin()">Login →</button>
+      <p class="login-error" id="login-error"></p>
+    </div>
+  </div>
+
+  <!-- ADMIN PANEL -->
+  <div id="admin-panel" style="display:none;">
+    <nav>
+      <div class="logo">KJ<span class="accent">Admin</span></div>
+      <div style="display:flex;gap:1.5rem;align-items:center;">
+        <a href="index.html" style="color:var(--muted);font-size:0.85rem;">← Back to Site</a>
+        <a href="#" onclick="adminLogout()" style="color:#ff4444;font-size:0.85rem;">Logout</a>
+      </div>
+    </nav>
+
+    <div class="admin-main">
+      <div class="section-header">
+        <h2>📋 All Submitted Events</h2>
+        <p>Approve or delete events submitted by students</p>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="num" id="total-count">—</div>
+          <div class="label">Total Events</div>
+        </div>
+        <div class="stat-card">
+          <div class="num" id="pending-count">—</div>
+          <div class="label">Pending Approval</div>
+        </div>
+        <div class="stat-card">
+          <div class="num" id="approved-count">—</div>
+          <div class="label">Approved</div>
+        </div>
+      </div>
+
+      <div class="events-grid" id="admin-events-grid">
+        <div class="loading">Loading events...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
